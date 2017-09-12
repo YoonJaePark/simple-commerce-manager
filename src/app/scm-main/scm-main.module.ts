@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -12,7 +13,8 @@ const CORE_COMPONENTS = [NavbarComponent, SidebarComponent, FooterComponent,
 
 @NgModule({
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule
     ],
     declarations: [CORE_COMPONENTS],
     exports: [CORE_COMPONENTS]
